@@ -18,20 +18,19 @@ int main() {
 
 	int s = 0;
 	int c = 0;
-	int x[2]{ 0, 0 };
-	int y[2]{ 0, 0 };
-	int z[2]{ 0, 0 };
+	int A[3]{0, 0, 0};
+	int B[3]{0, 0, 0};
 
-	std::cin >> x[0];
-	std::cin >> y[0];
-	std::cin >> z[0];
-	std::cin >> x[1];
-	std::cin >> y[1];
-	std::cin >> z[1];
+	std::cout << "Point A. Enter the values ​​of x, y, z: " << std::endl;
+	std::cin >> A[0] >> A[1] >> A[2];
+	std::cout << "Point B. Enter the values ​​of x, y, z: " << std::endl;
+	std::cin >> B[0] >> B[1] >> B[2];
+	std::cout << "Enter size: " << std::endl;
 	std::cin >> s;
+	std::cout << "Enter capacity: " << std::endl;
 	std::cin >> c;
 
-	double d = sqrt(pow(x[1] - x[0], 2) + pow(y[1] - y[0], 2) + pow(z[1] - z[0], 2));
+	double d = sqrt(pow(B[0] - A[0], 2) + pow(B[1] - A[1], 2) + pow(B[2] - A[2], 2));
 
 
 	std::cout << "Distance: " << d << std::endl;
@@ -43,4 +42,3 @@ int main() {
 
 
 	return 0;
-}
